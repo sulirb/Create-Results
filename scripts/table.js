@@ -52,14 +52,21 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Fonction pour effacer les résultats précédents
 function clearResults() {
+  const ligue = document.querySelector(".ligue");
   const table = document.querySelector(".table");
+
+  // Effacer le texte de la ligue
+  ligue.textContent = "";
 
   // Effacer le classement de la ligue
   table.textContent = "";
 }
 
 async function main(fileName) {
-  const { data } = await fetchResult(fileName);
+  const { data, league } = await fetchResult(fileName);
+
+  const ligue = document.querySelector(".ligue");
+  ligue.textContent = league;
 
   let teamStats = {};
 

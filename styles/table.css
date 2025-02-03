@@ -6,8 +6,18 @@ body {
   font-family: "DIN Next LT Pro Regular";
 }
 
+h1 {
+  color: blue;
+  text-align: center;
+}
+h1 a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
 table {
-  width: 50%;
+  margin: auto;
+  width: 100%;
 }
 table th {
   line-height: 2em;
