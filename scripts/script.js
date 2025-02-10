@@ -1,4 +1,4 @@
-import fetchCSV from "./fetchCSV";
+import fetchCSV from "./fetchCSV.js";
 
 const { fetchResult, loadCSVList } = fetchCSV;
 
